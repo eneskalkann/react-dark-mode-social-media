@@ -65,7 +65,7 @@ function Dashboard() {
           <div className="head-dashboard-right-bottom2">
             <div className="top">
               <img src={iconYoutube} alt="Youtube" />
-              <span>@nathanf</span>
+              <span>Nathan F.</span>
             </div>
             <div className="center">
               <h1>1044</h1>
@@ -73,7 +73,7 @@ function Dashboard() {
             </div>
             <div className="bottom">
               <img src={iconDown} alt="Down" />
-              <span>144 Today</span>
+              <span className="red-span">144 Today</span>
             </div>
           </div>
         </div>
@@ -109,11 +109,92 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <div className="overview-instagram"></div>
+          <div className="overview-instagram">
+            <div className="overview-instagram-views">
+              <div className="overview-instagram-left">
+                <h5>Likes</h5>
+                <h4>5462</h4>
+              </div>
+              <div className="overview-instagram-right">
+                <img src={iconInstagram} alt="instagram" />
+                <span>
+                  <img src={iconUp} />
+                  2257%
+                </span>
+              </div>
+            </div>
+            <div className="overview-instagram-likes">
+              <div className="overview-instagram-left">
+                <h5>Profile Views</h5>
+                <h4>52k</h4>
+              </div>
+              <div className="overview-instagram-right">
+                <img src={iconInstagram} alt="instagram" />
+                <span>
+                  <img src={iconUp} />
+                  1375%
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="overview-cards-bottom">
-          <div className="overview-twitter"></div>
-          <div className="overview-youtube"></div>
+          <div className="overview-twitter">
+            <div className="overview-twitter-retweets">
+              <div className="overview-twitter-left">
+                <h5>Retweets</h5>
+                <h4>117</h4>
+              </div>
+              <div className="overview-twitter-right">
+                <img src={iconTwitter} alt="twitter" />
+                <span>
+                  <img src={iconUp} />
+                  303%
+                </span>
+              </div>
+            </div>
+            <div className="overview-twitter-likes">
+              <div className="overview-twitter-left">
+                <h5>Likes</h5>
+                <h4>507</h4>
+              </div>
+              <div className="overview-twitter-right">
+                <img src={iconTwitter} alt="twitter" />
+                <span>
+                  <img src={iconUp} />
+                  553%
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="overview-youtube">
+            <div className="overview-youtube-likes">
+              <div className="overview-youtube-left">
+                <h5>Likes</h5>
+                <h4>107</h4>
+              </div>
+              <div className="overview-youtube-right">
+                <img src={iconYoutube} alt="youtube" />
+                <span>
+                  <img src={iconDown} />
+                  19%
+                </span>
+              </div>
+            </div>
+            <div className="overview-youtube-likes">
+              <div className="overview-youtube-left">
+                <h5>Total Views</h5>
+                <h4>1407</h4>
+              </div>
+              <div className="overview-youtube-right">
+                <img src={iconYoutube} alt="youtube" />
+                <span>
+                  <img src={iconDown} />
+                  12%
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
