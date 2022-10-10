@@ -1,16 +1,20 @@
+* {
+  overflow: hidden;
+}
+
 .container {
   margin: 0;
-  background: linear-gradient(180deg, hsl(225deg, 100%, 98%) 30%, #fff 0%);
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .container .header {
   margin-top: 30px;
+  margin-right: 750px;
+  white-space: nowrap;
 }
 .container .head-dashboard {
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
 }
 .container .head-dashboard .top {
@@ -88,6 +92,7 @@
 }
 .container .overview {
   margin-top: 30px;
+  position: relative;
 }
 .container .overview h1 {
   color: hsl(228deg, 12%, 44%);
@@ -95,11 +100,29 @@
 .container .overview h5 {
   margin: 30px 0 30px 20px;
   color: hsl(228deg, 12%, 44%);
+  white-space: nowrap;
 }
 .container .overview h4 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 700;
   margin-left: 20px;
+  white-space: nowrap;
+}
+.container .overview span {
+  white-space: nowrap;
+  color: hsl(163deg, 72%, 41%);
+  font-weight: 700;
+  font-size: 14px;
+}
+.container .overview span img {
+  margin: 0 3px 2px 0;
+}
+.container .overview .red-span {
+  color: hsl(356deg, 69%, 56%);
+}
+.container .overview .img-social-media {
+  width: 24px;
+  margin-bottom: 40px;
 }
 .container .overview-cards-top {
   text-align: left;
@@ -125,9 +148,12 @@
   margin: 0 30px 0 30px;
 }
 .container .overview-facebook-left {
+  width: 100px;
+}
+.container .overview-facebook-right {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  margin: 25px 0 0 110px;
 }
 .container .overview-instagram {
   display: flex;
@@ -147,10 +173,22 @@
   height: 130px;
   display: flex;
 }
+.container .overview-instagram-left {
+  width: 100px;
+}
+.container .overview-instagram-right {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 0 100px;
+}
+.container .overview-instagram-right span {
+  margin-left: -10px;
+}
 .container .overview-cards-bottom {
   text-align: left;
   display: flex;
   margin-top: 30px;
+  margin-bottom: 101px;
 }
 .container .overview-twitter {
   display: flex;
@@ -170,6 +208,17 @@
   margin: 0 30px 0 30px;
   display: flex;
 }
+.container .overview-twitter-left {
+  width: 100px;
+}
+.container .overview-twitter-right {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 0 110px;
+}
+.container .overview-twitter-right span {
+  margin-left: -15px;
+}
 .container .overview-youtube {
   display: flex;
 }
@@ -187,4 +236,26 @@
   width: 260px;
   height: 130px;
   display: flex;
+}
+.container .overview-youtube-left {
+  width: 100px;
+}
+.container .overview-youtube-right {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 0 100px;
+}
+
+.light {
+  background: linear-gradient(180deg, hsl(225deg, 100%, 98%) 30%, #fff 0%);
+}
+
+.dark {
+  background: linear-gradient(180deg, hsl(232deg, 19%, 15%) 30%, hsl(230deg, 17%, 14%) 0%);
+}
+
+.toggle {
+  position: absolute;
+  right: 160px;
+  top: 50px;
 }/*# sourceMappingURL=Dashboard.css.map */
