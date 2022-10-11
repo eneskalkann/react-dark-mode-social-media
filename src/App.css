@@ -1,4 +1,30 @@
-*{
-    margin: 0;
-    font-family: 'Inter', sans-serif;
+* {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.toggle {
+  position: fixed;
+  right: 160px;
+  top: 50px;
+  display: flex;
+  align-items: center;
+}
+h6 {
+  margin-right: 10px;
+  font-size: 14px;
+  color: hsl(228, 12%, 44%);
+}
+
+@media screen and (max-width:1159px) {
+    .toggle {
+        right: 137px;
+        top: 50px;
+      }
+}
+@media screen and (max-width:1016px) {
+    .toggle {
+        right: 67px;
+        top: 50px;
+      }
 }

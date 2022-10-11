@@ -10,6 +10,10 @@
     margin-top: 30px;
     margin-right: 750px;
     white-space: nowrap;
+    p {
+      color: hsl(228, 12%, 44%);
+      font-weight: 700;
+    }
   }
   .head-dashboard {
     margin-top: 50px;
@@ -100,6 +104,7 @@
       white-space: nowrap;
     }
     h4 {
+      width: 80px;
       font-size: 30px;
       font-weight: 700;
       margin-left: 20px;
@@ -143,13 +148,10 @@
         height: 130px;
         margin: 0 30px 0 30px;
       }
-      &-left {
-        width: 100px;
-      }
       &-right {
         display: flex;
         flex-direction: column;
-        margin: 25px 0 0 110px;
+        margin: 25px 0 0 90px;
       }
     }
     &-instagram {
@@ -169,23 +171,17 @@
         height: 130px;
         display: flex;
       }
-      &-left {
-        width: 100px;
-      }
       &-right {
         display: flex;
         flex-direction: column;
-        margin: 25px 0 0 100px;
-        span {
-          margin-left: -10px;
-        }
+        margin: 25px 0 0 90px;
       }
     }
     &-cards-bottom {
       text-align: left;
       display: flex;
       margin-top: 30px;
-      margin-bottom: 101px;
+      margin-bottom: 200px;
     }
     &-twitter {
       display: flex;
@@ -204,16 +200,11 @@
         margin: 0 30px 0 30px;
         display: flex;
       }
-      &-left {
-        width: 100px;
-      }
       &-right {
         display: flex;
         flex-direction: column;
-        margin: 25px 0 0 110px;
-        span {
-          margin-left: -15px;
-        }
+        margin-top: 25px;
+        margin-left: 90px;
       }
     }
     &-youtube {
@@ -233,13 +224,11 @@
         height: 130px;
         display: flex;
       }
-      &-left {
-        width: 100px;
-      }
       &-right {
         display: flex;
         flex-direction: column;
-        margin: 25px 0 0 100px;
+        margin-top: 25px;
+        margin-left: 90px;
       }
     }
   }
@@ -256,10 +245,128 @@
     hsl(232, 19%, 15%) 30%,
     hsl(230, 17%, 14%) 0%
   );
+  .container {
+    .header {
+      h1 {
+        color: #fff;
+      }
+    }
+    .head-dashboard-left-top1,
+    .head-dashboard-left-top2,
+    .head-dashboard-right-bottom1,
+    .head-dashboard-right-bottom2 {
+      background-color: hsl(228, 28%, 20%);
+    }
+    .center {
+      h1 {
+        color: #fff;
+      }
+    }
+    h4 {
+      color: #fff;
+    }
+    .overview-facebook-views,
+    .overview-facebook-likes,
+    .overview-instagram-views,
+    .overview-instagram-likes,
+    .overview-twitter-retweets,
+    .overview-twitter-likes,
+    .overview-youtube-likes,
+    .overview-youtube-views {
+      background: hsl(228, 28%, 20%);
+    }
+  }
 }
 
-.toggle {
-  position: absolute;
-  right: 160px;
-  top: 50px;
+@media screen and (max-width: 1159px) {
+  .container {
+    .header {
+      margin-right: 500px;
+    }
+    .head-dashboard {
+      &-left-top {
+        &1 {
+          width: 210px;
+          height: 200px;
+        }
+        &2 {
+          width: 210px;
+          height: 200px;
+          margin: 0 15px 0 15px;
+        }
+      }
+      &-right-bottom {
+        &1 {
+          width: 210px;
+          height: 200px;
+          margin-right: 15px;
+        }
+        &2 {
+          width: 210px;
+          height: 200px;
+        }
+      }
+    }
+    .overview {
+      &-facebook {
+        &-views {
+          width: 210px;
+        }
+        &-likes {
+          width: 210px;
+          margin: 0 15px 0 15px;
+        }
+        &-right {
+          margin: 25px 0 0 43px;
+        }
+      }
+      &-instagram {
+        &-likes {
+          width: 210px;
+        }
+        &-views {
+          width: 210px;
+          margin-right: 15px;
+        }
+        &-right {
+          margin: 25px 0 0 43px;
+        }
+      }
+      &-cards-bottom {
+        margin-top: 15px;
+        margin-bottom: 250px;
+      }
+      &-twitter {
+        &-retweets {
+          width: 210px;
+        }
+        &-likes {
+          width: 210px;
+          margin: 0 15px 0 15px;
+        }
+        &-right {
+          margin: 25px 0 0 43px;
+        }
+      }
+      &-youtube {
+        &-likes {
+          width: 210px;
+          margin-right: -15px;
+        }
+        &-views {
+          width: 210px;
+        }
+        &-right {
+          margin: 25px 0 0 43px;
+        }
+      }
+    }
+  }
 }
+
+@media screen and (max-width: 900px){
+
+}
+
+//                KALINAN YER
+// display flexi  bazı yerlerde column yapılacak

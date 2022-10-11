@@ -13,6 +13,10 @@
   margin-right: 750px;
   white-space: nowrap;
 }
+.container .header p {
+  color: hsl(228deg, 12%, 44%);
+  font-weight: 700;
+}
 .container .head-dashboard {
   margin-top: 50px;
   display: flex;
@@ -103,6 +107,7 @@
   white-space: nowrap;
 }
 .container .overview h4 {
+  width: 80px;
   font-size: 30px;
   font-weight: 700;
   margin-left: 20px;
@@ -147,13 +152,10 @@
   height: 130px;
   margin: 0 30px 0 30px;
 }
-.container .overview-facebook-left {
-  width: 100px;
-}
 .container .overview-facebook-right {
   display: flex;
   flex-direction: column;
-  margin: 25px 0 0 110px;
+  margin: 25px 0 0 90px;
 }
 .container .overview-instagram {
   display: flex;
@@ -173,22 +175,16 @@
   height: 130px;
   display: flex;
 }
-.container .overview-instagram-left {
-  width: 100px;
-}
 .container .overview-instagram-right {
   display: flex;
   flex-direction: column;
-  margin: 25px 0 0 100px;
-}
-.container .overview-instagram-right span {
-  margin-left: -10px;
+  margin: 25px 0 0 90px;
 }
 .container .overview-cards-bottom {
   text-align: left;
   display: flex;
   margin-top: 30px;
-  margin-bottom: 101px;
+  margin-bottom: 200px;
 }
 .container .overview-twitter {
   display: flex;
@@ -208,16 +204,11 @@
   margin: 0 30px 0 30px;
   display: flex;
 }
-.container .overview-twitter-left {
-  width: 100px;
-}
 .container .overview-twitter-right {
   display: flex;
   flex-direction: column;
-  margin: 25px 0 0 110px;
-}
-.container .overview-twitter-right span {
-  margin-left: -15px;
+  margin-top: 25px;
+  margin-left: 90px;
 }
 .container .overview-youtube {
   display: flex;
@@ -237,13 +228,11 @@
   height: 130px;
   display: flex;
 }
-.container .overview-youtube-left {
-  width: 100px;
-}
 .container .overview-youtube-right {
   display: flex;
   flex-direction: column;
-  margin: 25px 0 0 100px;
+  margin-top: 25px;
+  margin-left: 90px;
 }
 
 .light {
@@ -253,9 +242,96 @@
 .dark {
   background: linear-gradient(180deg, hsl(232deg, 19%, 15%) 30%, hsl(230deg, 17%, 14%) 0%);
 }
+.dark .container .header h1 {
+  color: #fff;
+}
+.dark .container .head-dashboard-left-top1,
+.dark .container .head-dashboard-left-top2,
+.dark .container .head-dashboard-right-bottom1,
+.dark .container .head-dashboard-right-bottom2 {
+  background-color: hsl(228deg, 28%, 20%);
+}
+.dark .container .center h1 {
+  color: #fff;
+}
+.dark .container h4 {
+  color: #fff;
+}
+.dark .container .overview-facebook-views,
+.dark .container .overview-facebook-likes,
+.dark .container .overview-instagram-views,
+.dark .container .overview-instagram-likes,
+.dark .container .overview-twitter-retweets,
+.dark .container .overview-twitter-likes,
+.dark .container .overview-youtube-likes,
+.dark .container .overview-youtube-views {
+  background: hsl(228deg, 28%, 20%);
+}
 
-.toggle {
-  position: absolute;
-  right: 160px;
-  top: 50px;
+@media screen and (max-width: 1159px) {
+  .container .header {
+    margin-right: 500px;
+  }
+  .container .head-dashboard-left-top1 {
+    width: 210px;
+    height: 200px;
+  }
+  .container .head-dashboard-left-top2 {
+    width: 210px;
+    height: 200px;
+    margin: 0 15px 0 15px;
+  }
+  .container .head-dashboard-right-bottom1 {
+    width: 210px;
+    height: 200px;
+    margin-right: 15px;
+  }
+  .container .head-dashboard-right-bottom2 {
+    width: 210px;
+    height: 200px;
+  }
+  .container .overview-facebook-views {
+    width: 210px;
+  }
+  .container .overview-facebook-likes {
+    width: 210px;
+    margin: 0 15px 0 15px;
+  }
+  .container .overview-facebook-right {
+    margin: 25px 0 0 43px;
+  }
+  .container .overview-instagram-likes {
+    width: 210px;
+  }
+  .container .overview-instagram-views {
+    width: 210px;
+    margin-right: 15px;
+  }
+  .container .overview-instagram-right {
+    margin: 25px 0 0 43px;
+  }
+  .container .overview-cards-bottom {
+    margin-top: 15px;
+    margin-bottom: 250px;
+  }
+  .container .overview-twitter-retweets {
+    width: 210px;
+  }
+  .container .overview-twitter-likes {
+    width: 210px;
+    margin: 0 15px 0 15px;
+  }
+  .container .overview-twitter-right {
+    margin: 25px 0 0 43px;
+  }
+  .container .overview-youtube-likes {
+    width: 210px;
+    margin-right: -15px;
+  }
+  .container .overview-youtube-views {
+    width: 210px;
+  }
+  .container .overview-youtube-right {
+    margin: 25px 0 0 43px;
+  }
 }/*# sourceMappingURL=Dashboard.css.map */
