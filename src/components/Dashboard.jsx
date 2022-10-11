@@ -14,6 +14,7 @@ function Dashboard() {
         <div className="header-left">
           <h1>Social Media Dashboard</h1>
           <p>Total Followers: 23,004</p>
+          <hr />
         </div>
       </div>
       <div className="head-dashboard">
@@ -68,7 +69,7 @@ function Dashboard() {
               <span>Nathan F.</span>
             </div>
             <div className="center">
-              <h1>1044</h1>
+              <h1>8239</h1>
               <h2>Subscribers</h2>
             </div>
             <div className="bottom">
@@ -88,9 +89,9 @@ function Dashboard() {
                 <h4>87</h4>
               </div>
               <div className="overview-facebook-right">
-                <img src={iconFacebook} alt="facebook" />
+                <img src={iconFacebook} alt="facebook" className="img-social-media"/>
                 <span>
-                  <img src={iconUp} />
+                  <img src={iconUp} alt="iconUp" />
                   3%
                 </span>
               </div>
@@ -101,9 +102,9 @@ function Dashboard() {
                 <h4>52</h4>
               </div>
               <div className="overview-facebook-right">
-                <img src={iconFacebook} alt="facebook" />
-                <span>
-                  <img src={iconDown} />
+                <img src={iconFacebook} alt="facebook" className="img-social-media"/>
+                <span className="red-span">
+                  <img src={iconDown} alt="iconDown"/>
                   2%
                 </span>
               </div>
@@ -116,9 +117,9 @@ function Dashboard() {
                 <h4>5462</h4>
               </div>
               <div className="overview-instagram-right">
-                <img src={iconInstagram} alt="instagram" />
+                <img src={iconInstagram} alt="instagram" className="img-social-media"/>
                 <span>
-                  <img src={iconUp} />
+                  <img src={iconUp} alt="iconUp" className="img-up-down"/>
                   2257%
                 </span>
               </div>
@@ -129,9 +130,9 @@ function Dashboard() {
                 <h4>52k</h4>
               </div>
               <div className="overview-instagram-right">
-                <img src={iconInstagram} alt="instagram" />
+                <img src={iconInstagram} alt="instagram" className="img-social-media"/>
                 <span>
-                  <img src={iconUp} />
+                  <img src={iconUp} alt="iconUp" className="img-up-down"/>
                   1375%
                 </span>
               </div>
@@ -146,9 +147,9 @@ function Dashboard() {
                 <h4>117</h4>
               </div>
               <div className="overview-twitter-right">
-                <img src={iconTwitter} alt="twitter" />
+                <img src={iconTwitter} alt="twitter" className="img-social-media"/>
                 <span>
-                  <img src={iconUp} />
+                  <img src={iconUp} alt="iconUp" className="img-up-down"/>
                   303%
                 </span>
               </div>
@@ -159,9 +160,9 @@ function Dashboard() {
                 <h4>507</h4>
               </div>
               <div className="overview-twitter-right">
-                <img src={iconTwitter} alt="twitter" />
+                <img src={iconTwitter} alt="twitter" className="img-social-media"/>
                 <span>
-                  <img src={iconUp} />
+                  <img src={iconUp} alt="iconUp" className="img-up-down"/>
                   553%
                 </span>
               </div>
@@ -174,22 +175,22 @@ function Dashboard() {
                 <h4>107</h4>
               </div>
               <div className="overview-youtube-right">
-                <img src={iconYoutube} alt="youtube" />
-                <span>
-                  <img src={iconDown} />
+                <img src={iconYoutube} alt="youtube" className="img-social-media"/>
+                <span className="red-span">
+                  <img src={iconDown} alt="iconDown" className="img-up-down"/>
                   19%
                 </span>
               </div>
             </div>
-            <div className="overview-youtube-likes">
+            <div className="overview-youtube-views">
               <div className="overview-youtube-left">
                 <h5>Total Views</h5>
                 <h4>1407</h4>
               </div>
               <div className="overview-youtube-right">
-                <img src={iconYoutube} alt="youtube" />
-                <span>
-                  <img src={iconDown} />
+                <img src={iconYoutube} alt="youtube" className="img-social-media"/>
+                <span className="red-span">
+                  <img src={iconDown} alt="iconDown" className="img-up-down"/>
                   12%
                 </span>
               </div>
