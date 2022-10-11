@@ -18,6 +18,7 @@ function App() {
     <div className="App" class={theme}>
       <Dashboard/>
       <div className="toggle">
+      <h6>Dark Mode</h6>
       <ReactSwitch onChange={Toggle} onColor={'378FE6'} offColor={'378FE6'} checked={theme === "dark"}/>
       </div>
     </div>

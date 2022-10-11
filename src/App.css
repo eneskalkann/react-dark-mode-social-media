@@ -16,15 +16,33 @@ h6 {
   color: hsl(228, 12%, 44%);
 }
 
-@media screen and (max-width:1159px) {
-    .toggle {
-        right: 137px;
-        top: 50px;
-      }
+@media screen and (max-width: 1159px) {
+  .toggle {
+    right: 137px;
+    top: 50px;
+  }
 }
-@media screen and (max-width:1016px) {
-    .toggle {
-        right: 67px;
-        top: 50px;
-      }
+@media screen and (max-width: 1016px) {
+  .toggle {
+    right: 67px;
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .toggle {
+    position: absolute;
+    margin-top: 65px;
+    left:50%;
+    margin-left:-70px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .toggle {
+    position: absolute;
+    margin-top: 50px;
+    left:50%;
+    margin-left:-70px;
+  }
 }
