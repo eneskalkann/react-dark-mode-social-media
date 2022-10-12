@@ -7,7 +7,6 @@ This project is Frontend Mentor's project. I want to develop a project using dar
 In this project i used to first time react-switch component and improve my react hooks skills.
 
 #### Tools 
-
- Markup : * React
-          * Sass
-          * React Switch
+* First point
+* Second Point
+* Third point
