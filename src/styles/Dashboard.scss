@@ -65,13 +65,14 @@
     &-left-top {
       display: flex;
       &1 {
-        background: hsl(227, 47%, 96%);
+        background:linear-gradient(to right, hsl(208, 92%, 53%), hsl(208, 92%, 53%)) top/100% 5px no-repeat,hsl(227, 47%, 96%);
         width: 260px;
         height: 200px;
         border-radius: 10px;
       }
       &2 {
-        background: hsl(227, 47%, 96%);
+        background:linear-gradient(to right, hsl(203, 89%, 53%), hsl(203, 89%, 53%)) top/100% 5px no-repeat,hsl(227, 47%, 96%);
+
         width: 260px;
         height: 200px;
         border-radius: 10px;
@@ -86,9 +87,12 @@
         height: 200px;
         margin-right: 30px;
         border-radius: 10px;
+        background:
+        linear-gradient(to right, #fdc468, #ffa263, #ff806c, #f9607f, #df4996) top/100% 5px no-repeat,
+      hsl(227, 47%, 96%);
       }
       &2 {
-        background: hsl(227, 47%, 96%);
+        background:linear-gradient(to right, #c4032a, #c4032a) top/100% 5px no-repeat,hsl(227, 47%, 96%);
         width: 260px;
         height: 200px;
         border-radius: 10px;
