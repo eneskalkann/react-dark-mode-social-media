@@ -21,3 +21,7 @@ In this project i used to first time react-switch component and improve my react
  ```
  npm start
  ```
+ ## Design
+ 
+![react-dark-mode-social-media vercel app_ (1)](https://user-images.githubusercontent.com/75678744/195316816-d5d0de91-c681-421d-b644-07554d8dfd8e.png)
+![react-dark-mode-social-media vercel app_ (2)](https://user-images.githubusercontent.com/75678744/195316840-d14fd15b-cbe6-4523-9dc2-908157802cd9.png)
