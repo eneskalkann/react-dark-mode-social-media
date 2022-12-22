@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Dashboard from './components/Dashboard';
 import { createContext } from 'react';
 import ReactSwitch from 'react-switch';
-
 export const DarkModeContext = createContext(null);
 
 function App() {
@@ -12,6 +11,7 @@ function App() {
   const Toggle = () => {
     setTheme((current) => (current === "light" ? "dark" : "light"))
   }
+
 
   return (
     <DarkModeContext.Provider value={{theme,Toggle}}>
