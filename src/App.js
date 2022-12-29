@@ -12,7 +12,6 @@ function App() {
     setTheme((current) => (current === "light" ? "dark" : "light"))
   }
 
-
   return (
     <DarkModeContext.Provider value={{theme,Toggle}}>
     <div className="App" class={theme}>
