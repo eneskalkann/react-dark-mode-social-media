@@ -12,6 +12,7 @@ In this project i used to first time react-switch component and improve my react
  * React
  * Sass   
  * React Switch
+ * JS Cookie
  
  ##### Project Setup
  ```
