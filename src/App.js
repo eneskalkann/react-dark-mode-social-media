@@ -1,27 +1,35 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import Dashboard from './components/Dashboard';
-import { createContext } from 'react';
 import ReactSwitch from 'react-switch';
-export const DarkModeContext = createContext(null);
+import Cookies from 'js-cookie';
+
 
 function App() {
 
   const [theme , setTheme] = useState("light");
-  const Toggle = () => {
-    setTheme((current) => (current === "light" ? "dark" : "light"))
+
+  useEffect(() =>{
+    const cookieTheme = Cookies.get('theme');
+    if(cookieTheme){
+      setTheme(cookieTheme);
+    }
+  },[]);
+
+  const handleCookieTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    Cookies.set('theme' , newTheme)
   }
 
   return (
-    <DarkModeContext.Provider value={{theme,Toggle}}>
-    <div className="App" class={theme}>
+    <div className="App" class={`App ${theme}`}>
       <Dashboard/>
       <div className="toggle">
       <h6>Dark Mode</h6>
-      <ReactSwitch onChange={Toggle} onColor={'378FE6'} offColor={'378FE6'} checked={theme === "dark"}/>
+      <ReactSwitch onChange={handleCookieTheme} onColor={'378FE6'} offColor={'378FE6'} checked={theme === "dark"}/>
       </div>
     </div>
-    </DarkModeContext.Provider>
   );
 }
 
